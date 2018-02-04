@@ -1,0 +1,56 @@
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        title
+        link(href='/bootstrap/css/bootstrap.css', rel='stylesheet')
+        link(href='/bootstrap/css/cover.css', rel='stylesheet')
+
+        style#holderjs-style(type='text/css').
+        style#style-1-cropbar-clipper.
+            .en-markup-crop-options {
+                top: 18px !important;
+                left: 50% !important;
+                margin-left: -100px !important;
+                width: 200px !important;
+                border: 2px rgba(255,255,255,.38) solid !important;
+                border-radius: 4px !important;
+            }
+            .en-markup-crop-options div div:first-of-type {
+                margin-left: 0px !important;
+            }
+    body
+        .site-wrapper
+            .site-wrapper-inner
+                .cover-container
+                    .masthead.clearfix
+                        .inner
+                            h3.masthead-brand Cover
+                            ul.nav.masthead-nav
+                                li.active
+                                    a(href='#') Home
+                                li
+                                    a(href='#') Features
+                                li
+                                    a(href='#') Contact
+                    .inner.cover
+                        h1.cover-heading Попробуйте наш SVG-editor
+                        p.lead
+                            | Введите название вашего проекта
+                        p.lead
+
+                        form.form-signin(method='post', action='/editor', role='form')
+                            input.form-control(type='text', placeholder='Название проекта', required='', name='project[name]')
+                            button.btn.btn-lg.btn-primary.btn-block(type='submit') Начать
+
+                    .mastfoot
+                        .inner
+                            p
+                                | Cover template for
+                                a(href='http://getbootstrap.com') Bootstrap
+                                | , by
+                                a(href='https://twitter.com/mdo') @mdo
+                                | .
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
+        script(src='/bootstrap/js/bootstrap.js')
