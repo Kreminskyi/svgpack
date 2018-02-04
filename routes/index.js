@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var Dropbox = require('dropbox');
-var dbx = new Dropbox({ accessToken: "Aa0PdoxK1rAAAAAAAAAAv1QU1l5K0EkLOIr6ua3gDqjMzl_AnDVRBDnKASjHgCpm" });
+var dbx = new Dropbox({ accessToken: "" });
 var localStorage = require('localStorage');
 var User;
 
